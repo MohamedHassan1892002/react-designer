@@ -1,0 +1,215 @@
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root {
+  --mainColor:#ff565b ;
+}
+
+li{
+  list-style: none;
+  padding-left: 0;
+  padding-top: 1.5rem;
+}
+a{
+  transition: color 1s !important;
+}
+
+
+/* Navbar  */
+.nav-link{
+  transition: color 1s ,border 1s  !important;
+  font-weight: 500;
+}
+.nav-item{
+  padding-bottom: 0.5rem;
+  padding-top: 0;
+}
+.nav-item :focus{
+  color: var(--mainColor) !important;
+  border-bottom: 2px solid var(--mainColor) !important;
+}
+.nav-link:hover{
+  color: var(--mainColor) !important ;
+  border-bottom: 2px solid var(--mainColor) !important;
+}
+
+/* end navbar  */
+
+/* home */
+.landing-home{
+  background-image:url(./components/images/banner-bg.jpg) ;
+  background-size: cover;
+  height: 100vh ;
+}
+.landing-home div{
+  position: relative;
+  top: 40%;
+  text-align: center;
+  transform: translate(50 50);
+}
+.landing-home h4{
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.landing-home span{
+  color: var(--mainColor);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.landing-home h1{
+  font-size: 4rem;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* end home */
+
+/* tooLine */
+.tooLine h3 , .OUR-INTERIOR-WORK h3 , .frame h2 {
+   font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+}
+.tooLine h2{
+   font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--mainColor);
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    position: relative;
+    margin-left: 10%;
+}
+.tooLine h2::before{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: var(--mainColor);
+  top: 50%;
+  right: 100% ;
+}
+
+/* end tooLine */
+
+
+/* Interior */
+.Interior p{
+  font-size: 1.25rem;
+}
+.Interior img{
+  width: 100%;
+}
+.Interior h2{
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.arrow{
+  color: black;
+}
+.arrow:hover{
+  color: var(--mainColor) !important;
+
+}
+.Interior .build{
+  border-bottom: 2px solid #eeeeee;
+}
+/* End Interior */
+
+/* .OUR-INTERIOR-WORK */
+.OUR-INTERIOR-WORK h2 , .frame h3{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--mainColor);
+  line-height: 32px;
+  letter-spacing: -0.5px;
+}
+.OUR-INTERIOR-WORK img{
+  width: 100%;
+}
+
+/* iframe  */
+.frame{
+  background-image: url(./components/images/contact-us-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* Footer */
+Footer a{
+  color: var(--mainColor);
+  
+}
+Footer a:hover{
+  color: var(--mainColor);
+}
+footer .goTop{
+  transition: color 1s;
+}
+footer .goTop:hover{
+  color: var(--mainColor) !important;
+}
+.endFooter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* notFound */
+.notFound img{
+height: 100vh;
+width: 100%; 
+}
+/* media  */
+
+@media screen and  (max-width: 768px) {
+  html{
+    font-size: 13px;
+  }
+  .Interior {
+    text-align: center;
+  }
+  .Interior img{
+    padding-right: 0 !important;
+  }
+  .tooLine{
+    padding-left: 10%;
+  }
+  .OUR-INTERIOR-WORK{
+    text-align: center;
+  }
+  Iframe{
+    width: 100% !important;
+  }
+  footer .linkes{
+    text-align: center;
+  }
+  .endFooter{
+    /* text-align: center; */
+    justify-content: center;
+  }
+ }
+@media screen and  (max-width: 576px) {
+  html{
+    font-size: 10px;
+  }
+ 
+ }

@@ -1,0 +1,48 @@
+.work-landing-page{
+    background-image: url(../images/page-banner-bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.work-landing-page .text{
+    top: 40%;
+}
+.work-landing-page span{
+    color: var(--mainColor);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.work-landing-page h2{
+    font-size: 4rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.work-landing-page p{
+    font-size: 1rem;
+    color: white;
+}
+
+/* MINIMALISTIC */
+.MINIMALISTIC-container{
+    background-image:url(../images/explore-item-01.jpg) ;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.explor img{
+    width: 100%;
+}
+
+@media screen and  (max-width: 576px) {
+    .pagination{
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    .pagination div{
+        padding: 10px 0;
+    }
+   
+   }

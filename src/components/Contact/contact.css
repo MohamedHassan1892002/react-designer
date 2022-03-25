@@ -1,0 +1,7 @@
+.contact h3{
+    color: var(--mainColor);
+}
+.contact .text div{
+    background-color: var(--mainColor) ;
+
+}

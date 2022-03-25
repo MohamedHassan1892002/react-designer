@@ -1,0 +1,46 @@
+.about-landing-page{
+    background-image: url(../images/page-banner-bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.about-landing-page .text{
+    top: 40%;
+}
+.about-landing-page span{
+    color: var(--mainColor);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about-landing-page h2{
+    font-size: 4rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about-landing-page p{
+    font-size: 1rem;
+    color: white;
+}
+/* three-items */
+.three-items svg{
+    color:var(--mainColor);
+}
+
+/* SPECIALIZES */
+.SPECIALIZES img{
+    width: 100%;
+}
+
+/* HIRE-US */
+.HIRE-US-contant{
+    flex-wrap: wrap;
+    
+}
+/* media */
+@media screen and  (max-width: 576px){
+    .HIRE-US-contant{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+}
